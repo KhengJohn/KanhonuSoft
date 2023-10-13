@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>KANHOUN SOFT</title>
+    <link rel="icon" type="image/x-icon" href="/assets/logo.svg" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
     />
     <link href="../css/styles.css" rel="stylesheet" />
-
   </head>
   <body>
     <!-- NAV -->
@@ -28,7 +28,17 @@
         <div class="line3"></div>
       </div>
       <ul class="nav-links">
-        <li><a href="refer&earn.html">Nos Prestations</a></li>
+        <li>
+          <a class="dropdown-head" href="refer&earn.html"
+            >Nos Prestations<img src="../assets/arrow.svg" alt="arrow"
+          /></a>
+          <!-- Dropdown Content -->
+          <div class="dropdown-content">
+            <a href="#">Formation et Conseils</a>
+            <a href="#">Etudes et Ingénierie informatique</a>
+            <a href="#">Vente de matériels informatiques</a>
+          </div>
+        </li>
         <li>
           <a class="dropdown-head" href="contactUs.html"
             >Information <img src="../assets/arrow.svg" alt="arrow"
@@ -160,7 +170,7 @@
             <li>Approvisionnement mondial</li>
           </ul>
         </div>
-        <div class="slide-in-right2 service-content-right ">
+        <div class="slide-in-right2 service-content-right">
           <img
             class="service-img"
             src="../assets/service3.svg"
@@ -185,7 +195,7 @@
         <div class="technologies-img">
           <div class="tech-div pop-up1 fade-in">
             <img
-              class="tech-img "
+              class="tech-img"
               src="../assets/springTech.svg"
               alt="tech-img"
             />
@@ -315,7 +325,13 @@
           </div>
           <div class="input-div">
             <label for="message">Your Message:</label>
-            <textarea class="textarea" id="message" name="message" cols="49" rows="4"></textarea>
+            <textarea
+              class="textarea"
+              id="message"
+              name="message"
+              cols="49"
+              rows="4"
+            ></textarea>
           </div>
           <button class="contained-btn full-width">Submit</button>
         </form>
@@ -366,10 +382,9 @@
         </div>
       </div>
     </div>
-    <script src="../js/nav.js"></script>  
-      <script src="../js/animations.js"></script>
+    <script src="../js/nav.js"></script>
+    <script src="../js/animations.js"></script>
     <script src="https://unpkg.com/scrollmagic@2.0.8/scrollmagic/minified/ScrollMagic.min.js"></script>
     <script src="https://unpkg.com/gsap@3.9.0"></script>
-   
   </body>
 </html>
