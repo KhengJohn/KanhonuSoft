@@ -57,7 +57,6 @@ body {
   font-size: 18px;
   cursor: pointer;
 }
-
 .hero-right {
   display: flex;
   flex-direction: column;
@@ -111,7 +110,7 @@ body {
     color: #a36f4a;
   }
   .hero-subheading {
-    font-size: 18px;
+    font-size: 16px;
     color: #7a7a7a;
   }
   .btn-group {
@@ -124,7 +123,7 @@ body {
     background-color: #52246d;
     color: #fff !important;
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 16px;
     cursor: pointer;
   }
   .outlined-btn {
@@ -133,8 +132,11 @@ body {
     background-color: #fff;
     color: #52246d;
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 16px;
     cursor: pointer;
+  }
+  .service-btn{
+    width: 50%;
   }
   .hero-right {
     display: flex;
@@ -162,19 +164,19 @@ body {
     padding: 20px !important;
     display: flex !important;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background: #f7f9fc;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     gap: 20px;
   }
   .patners-p {
     color: #7a7a7a;
-    font-size: 18px;
+    font-size: 16px;
   }
   .patners-sub {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
+    display: grid !important;
+grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
   .service {
@@ -185,12 +187,12 @@ body {
     align-items: center;
   }
   .service-heading {
-    font-size: 36px;
+    font-size: 26px;
     margin-bottom: -5px;
     color: #52246d;
   }
   .service-subheading {
-    font-size: 18px;
+    font-size: 16px !important;
     width: 90%;
     color: #7a7a7a;
     display: none;
@@ -217,7 +219,7 @@ body {
     justify-content: flex-start;
   }
   .service-content-left h2 {
-    font-size: 36px;
+    font-size: 26px !important;
     margin: 0;
     color: #a36f4a;
   }
@@ -226,7 +228,7 @@ body {
     color: #52246d;
   }
   .service-content-left ul li {
-    font-size: 18px;
+    font-size: 16px;
   }
   .service-content-left ul {
     list-style-type: none; /* Remove default bullets */
@@ -234,7 +236,7 @@ body {
   }
 
   .service-content-left ul li {
-    font-size: 20px;
+    font-size: 16px !important;
     position: relative;
     padding-left: 30px; /* Add padding for the circle and some space */
     margin-bottom: 8px; /* Add spacing between list items */
@@ -287,6 +289,7 @@ body {
     display: flex !important;
     flex-direction: column;
     padding: 20px !important;
+    padding-top: 50px !important;
     gap: 50px;
   }
   .technologies-left {
@@ -297,12 +300,12 @@ body {
     margin: auto;
   }
   .technologies-left h2 {
-    font-size: 36px;
+    font-size: 26px !important;
     margin: auto;
     color: #a36f4a;
   }
   .technologies-left p {
-    font-size: 18px;
+    font-size: 16px !important;
     color: #fff;
   }
   .technologies-right {
@@ -384,7 +387,7 @@ body {
   }
   .contact-left span {
     color: #52246d;
-    font-size: 26px;
+    font-size: 26px !important;
     font-weight: 600;
   }
   .contact-right {
@@ -455,7 +458,7 @@ body {
     width: 50px;
   }
   .contact-content p {
-    font-size: 18px;
+    font-size: 16px !important;
     font-weight: 600;
   }
   .footer {
@@ -465,13 +468,13 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     gap: 40px;
   }
   .footer-left {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px !important;
   }
   .footer-logo-div {
     display: flex;
@@ -481,15 +484,15 @@ body {
   }
   .footer-left span {
     color: #52246d;
-    font-size: 26px;
+    font-size: 26px !important;
     font-weight: 600;
   }
   .footer-left p {
     color: #52246d;
-    font-size: 18px;
+    font-size: 14px !important;
   }
   .footer-logo {
-    width: 100px;
+    width: 80px !important;
     cursor: pointer;
   }
   .footer-social {
@@ -502,7 +505,7 @@ body {
   }
   .footer-center span,
   .footer-right span {
-    font-size: 18px;
+    font-size: 16px !important;
     color: #a36f4a;
   }
   .footer-center ul,
@@ -510,10 +513,11 @@ body {
     list-style-type: none; /* Remove default bullets */
     padding: 10px 0; /* Remove default padding */
   }
+
   .footer-center ul li,
   .footer-right ul li {
     color: #52246d;
-    font-size: 16px;
+    font-size: 14px !important;
     position: relative;
     margin-bottom: 10px; /* Add spacing between list items */
     cursor: pointer;
@@ -646,7 +650,7 @@ body {
 .technologies {
   height: 440px;
   background-color: #52246d;
-  margin: 50px auto;
+  margin: 50px auto 100px auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding: 0px 100px;
@@ -888,6 +892,10 @@ body {
 .footer-right ul {
   list-style-type: none; /* Remove default bullets */
   padding: 10px 0; /* Remove default padding */
+}
+.footer-center ul a,
+.footer-right ul a {
+text-decoration: none;
 }
 .footer-center ul li,
 .footer-right ul li {
