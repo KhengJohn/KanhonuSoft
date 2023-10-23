@@ -370,9 +370,9 @@ grid-template-columns: repeat(2, 1fr);
     border-radius: 8px;
     background: #fff;
     box-shadow: none !important;
-    width: 80% !important;
+    width: 90% !important;
     margin: 50px auto;
-    padding: 50px 20px !important;
+    padding: 50px 25px !important;
     display: flex !important;
     flex-direction: column;
     gap: 40px;
@@ -399,10 +399,10 @@ grid-template-columns: repeat(2, 1fr);
   }
   .contact-form {
     border-radius: 8px;
-    box-shadow: none !important;
+    /* box-shadow: none !important; */
     width: 100% !important;
     margin: auto;
-    padding: 0px 0px !important;
+    padding:25px !important;
     height: 100% !important;
     display: flex;
     flex-direction: column;
@@ -419,24 +419,26 @@ grid-template-columns: repeat(2, 1fr);
   .input-div {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100% !important;
   }
   .input-label {
     font-size: 14px;
+    align-self: flex-start;
   }
   .input {
-    /* width: 100%; */
+    width: 96% !important;
     height: 45px;
     border-radius: 8px;
     border: 1.5px solid #bdbdbd;
     padding: 0 10px;
   }
   .textarea {
-    width: 97%;
+    width: 100% !important;
     border-radius: 8px;
     border: 1.5px solid #bdbdbd;
     padding: 10px;
-    justify-self: flex-start;
   }
   .input:focus {
     border: 1.5px solid #7a7a7a;
