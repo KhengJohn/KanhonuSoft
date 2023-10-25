@@ -283,6 +283,7 @@ grid-template-columns: repeat(2, 1fr);
   }
   .service-img {
     width: 100% !important;
+    overflow: hidden;
   }
   .technologies {
     height: 100% !important;
@@ -372,7 +373,7 @@ grid-template-columns: repeat(2, 1fr);
     border-radius: 8px;
     background: #fff;
     box-shadow: none !important;
-    width: 90% !important;
+    /* width: 90% !important; */
     margin: 50px auto;
     padding: 50px 25px !important;
     display: flex !important;
@@ -464,6 +465,17 @@ grid-template-columns: repeat(2, 1fr);
   .contact-content p {
     font-size: 16px !important;
     font-weight: 600;
+  }
+  .blog h2{
+    font-size: 26px;
+    width: 80%;
+    text-align: center;
+  }
+  .blog-cards{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr) !important;
+    padding:0 20px !important;
+    grid-gap: 40px;
   }
   .footer {
     height: 100% !important;
@@ -652,6 +664,7 @@ grid-template-columns: repeat(2, 1fr);
 }
 .service-img {
   width: 550px;
+  overflow: hidden;
 }
 .technologies {
   height: 440px;
@@ -849,6 +862,65 @@ grid-template-columns: repeat(2, 1fr);
 }
 .green-color {
   background-color: #2fb67e;
+}
+.blog{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: 70px auto;
+}
+.blog-cards{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding:0 100px;
+  grid-gap: 40px;
+}
+.blog-card{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 8px; 
+  display: flex;
+  flex-direction: column;
+  /* width: 300px; */
+  /* gap: -10px; */
+}
+.blog-card img{
+width: 100%;
+/* height: 150px; */
+border-top-right-radius: 8px;
+border-top-left-radius: 8px;
+background-position:center;
+background-size: contain;
+background-repeat: no-repeat;
+margin-bottom: -15px;
+}
+.blog-content{
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.blog-content span{
+  font-size: 9px;
+  margin: -15px auto;
+  background-color: #52246d27;
+  padding: 2px;
+  border-radius: 3px;
+}
+.blog-content p{
+  margin: 5px auto;
+  font-size: 14px;
+}
+.blog-content a{
+  font-size: 13px;
+  cursor: pointer;
+  color: #52246d;
+  width: max-content;
+}
+.blog-content a:hover{
+  width: max-content;
+  padding-left: 2px;
 }
 .footer {
   height: 60vh;
